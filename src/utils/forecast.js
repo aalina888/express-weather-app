@@ -13,7 +13,8 @@ const forecast = (latitude, longitude, callback) => {
             callback(undefined, body.current.weather_descriptions[0] + '. ' +
                 'It is current ' + body.current.temperature + ' degrees out. ' +
                 'It feels like ' + body.current.feelslike + ' degrees out. ' +
-                'Wind speed is ' + body.current.wind_speed + '.');
+                'Wind speed is ' + body.current.wind_speed + '. ' +
+                'The humidity is ' + body.current.humidity + '.');
         }
     });
 };
